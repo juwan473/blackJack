@@ -17,8 +17,6 @@ let player = {
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
-    // if 1     -> return 11
-    // if 11-13 -> return 10
     let randomNumer = Math.floor( Math.random()*13 ) + 1
     if (randomNumer > 10) {
         return 10
@@ -40,7 +38,6 @@ function startGame() {
 
 function renderGame() {
     cardsEl.textContent = "Cards: "
-    // Create a for loop that renders out all the cards instead of just two
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
