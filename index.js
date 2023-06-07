@@ -10,7 +10,7 @@ let playerEl= document.getElementById("player-el")
 let sumEl = document.getElementById("sum-el")
 
 let player = {
-    name: "Wan",
+    name: "Player",
     chips: 500
 }
 
